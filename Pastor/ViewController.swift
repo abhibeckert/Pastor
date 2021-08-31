@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Pastor
 //
-//  Created by Abhi Beckert on 21-8-31.
+//  Created by Abhi Beckert on 2021-08-31.
 //
 
 import UIKit

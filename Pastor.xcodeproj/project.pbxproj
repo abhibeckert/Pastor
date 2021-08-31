@@ -14,18 +14,12 @@
 		3814112026DDA57900073F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3814111F26DDA57900073F8C /* Assets.xcassets */; };
 		3814112326DDA57900073F8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3814112126DDA57900073F8C /* LaunchScreen.storyboard */; };
 		3814112E26DDA57A00073F8C /* PastorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3814112D26DDA57A00073F8C /* PastorTests.swift */; };
-		3814113926DDA57A00073F8C /* PastorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3814113826DDA57A00073F8C /* PastorUITests.swift */; };
+		3814114926DDB6DE00073F8C /* Vault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3814114826DDB6DE00073F8C /* Vault.swift */; };
+		3814114A26DDB6DE00073F8C /* Vault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3814114826DDB6DE00073F8C /* Vault.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		3814112A26DDA57A00073F8C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3814110B26DDA57500073F8C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3814111226DDA57500073F8C;
-			remoteInfo = Pastor;
-		};
-		3814113526DDA57A00073F8C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3814110B26DDA57500073F8C /* Project object */;
 			proxyType = 1;
@@ -46,11 +40,9 @@
 		3814112926DDA57A00073F8C /* PastorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PastorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3814112D26DDA57A00073F8C /* PastorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastorTests.swift; sourceTree = "<group>"; };
 		3814112F26DDA57A00073F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3814113426DDA57A00073F8C /* PastorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PastorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3814113826DDA57A00073F8C /* PastorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastorUITests.swift; sourceTree = "<group>"; };
-		3814113A26DDA57A00073F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3814114626DDA62D00073F8C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3814114726DDB07300073F8C /* Pastor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pastor.entitlements; sourceTree = "<group>"; };
+		3814114826DDB6DE00073F8C /* Vault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vault.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,13 +60,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3814113126DDA57A00073F8C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,7 +69,6 @@
 				3814114626DDA62D00073F8C /* README.md */,
 				3814111526DDA57500073F8C /* Pastor */,
 				3814112C26DDA57A00073F8C /* PastorTests */,
-				3814113726DDA57A00073F8C /* PastorUITests */,
 				3814111426DDA57500073F8C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,7 +78,6 @@
 			children = (
 				3814111326DDA57500073F8C /* Pastor.app */,
 				3814112926DDA57A00073F8C /* PastorTests.xctest */,
-				3814113426DDA57A00073F8C /* PastorUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +89,7 @@
 				3814111626DDA57500073F8C /* AppDelegate.swift */,
 				3814111826DDA57500073F8C /* SceneDelegate.swift */,
 				3814111A26DDA57500073F8C /* ViewController.swift */,
+				3814114826DDB6DE00073F8C /* Vault.swift */,
 				3814111C26DDA57500073F8C /* Main.storyboard */,
 				3814111F26DDA57900073F8C /* Assets.xcassets */,
 				3814112126DDA57900073F8C /* LaunchScreen.storyboard */,
@@ -121,15 +105,6 @@
 				3814112F26DDA57A00073F8C /* Info.plist */,
 			);
 			path = PastorTests;
-			sourceTree = "<group>";
-		};
-		3814113726DDA57A00073F8C /* PastorUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3814113826DDA57A00073F8C /* PastorUITests.swift */,
-				3814113A26DDA57A00073F8C /* Info.plist */,
-			);
-			path = PastorUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,24 +145,6 @@
 			productReference = 3814112926DDA57A00073F8C /* PastorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3814113326DDA57A00073F8C /* PastorUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3814114326DDA57A00073F8C /* Build configuration list for PBXNativeTarget "PastorUITests" */;
-			buildPhases = (
-				3814113026DDA57A00073F8C /* Sources */,
-				3814113126DDA57A00073F8C /* Frameworks */,
-				3814113226DDA57A00073F8C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3814113626DDA57A00073F8C /* PBXTargetDependency */,
-			);
-			name = PastorUITests;
-			productName = PastorUITests;
-			productReference = 3814113426DDA57A00073F8C /* PastorUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,10 +158,6 @@
 						CreatedOnToolsVersion = 12.5.1;
 					};
 					3814112826DDA57A00073F8C = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 3814111226DDA57500073F8C;
-					};
-					3814113326DDA57A00073F8C = {
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = 3814111226DDA57500073F8C;
 					};
@@ -225,7 +178,6 @@
 			targets = (
 				3814111226DDA57500073F8C /* Pastor */,
 				3814112826DDA57A00073F8C /* PastorTests */,
-				3814113326DDA57A00073F8C /* PastorUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -248,13 +200,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3814113226DDA57A00073F8C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -264,6 +209,7 @@
 			files = (
 				3814111B26DDA57500073F8C /* ViewController.swift in Sources */,
 				3814111726DDA57500073F8C /* AppDelegate.swift in Sources */,
+				3814114926DDB6DE00073F8C /* Vault.swift in Sources */,
 				3814111926DDA57500073F8C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,15 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3814114A26DDB6DE00073F8C /* Vault.swift in Sources */,
 				3814112E26DDA57A00073F8C /* PastorTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3814113026DDA57A00073F8C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3814113926DDA57A00073F8C /* PastorUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,11 +230,6 @@
 			isa = PBXTargetDependency;
 			target = 3814111226DDA57500073F8C /* Pastor */;
 			targetProxy = 3814112A26DDA57A00073F8C /* PBXContainerItemProxy */;
-		};
-		3814113626DDA57A00073F8C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3814111226DDA57500073F8C /* Pastor */;
-			targetProxy = 3814113526DDA57A00073F8C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -521,46 +455,6 @@
 			};
 			name = Release;
 		};
-		3814114426DDA57A00073F8C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 45C3C9WN25;
-				INFOPLIST_FILE = PastorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.abhibeckert.PastorUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Pastor;
-			};
-			name = Debug;
-		};
-		3814114526DDA57A00073F8C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 45C3C9WN25;
-				INFOPLIST_FILE = PastorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.abhibeckert.PastorUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Pastor;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -587,15 +481,6 @@
 			buildConfigurations = (
 				3814114126DDA57A00073F8C /* Debug */,
 				3814114226DDA57A00073F8C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3814114326DDA57A00073F8C /* Build configuration list for PBXNativeTarget "PastorUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3814114426DDA57A00073F8C /* Debug */,
-				3814114526DDA57A00073F8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
