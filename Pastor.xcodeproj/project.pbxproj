@@ -49,6 +49,8 @@
 		3814113426DDA57A00073F8C /* PastorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PastorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3814113826DDA57A00073F8C /* PastorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastorUITests.swift; sourceTree = "<group>"; };
 		3814113A26DDA57A00073F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3814114626DDA62D00073F8C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3814114726DDB07300073F8C /* Pastor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pastor.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		3814110A26DDA57500073F8C = {
 			isa = PBXGroup;
 			children = (
+				3814114626DDA62D00073F8C /* README.md */,
 				3814111526DDA57500073F8C /* Pastor */,
 				3814112C26DDA57A00073F8C /* PastorTests */,
 				3814113726DDA57A00073F8C /* PastorUITests */,
@@ -99,6 +102,7 @@
 		3814111526DDA57500073F8C /* Pastor */ = {
 			isa = PBXGroup;
 			children = (
+				3814114726DDB07300073F8C /* Pastor.entitlements */,
 				3814111626DDA57500073F8C /* AppDelegate.swift */,
 				3814111826DDA57500073F8C /* SceneDelegate.swift */,
 				3814111A26DDA57500073F8C /* ViewController.swift */,
@@ -436,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pastor/Pastor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45C3C9WN25;
 				INFOPLIST_FILE = Pastor/Info.plist;
@@ -445,6 +450,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.abhibeckert.Pastor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pastor/Pastor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45C3C9WN25;
 				INFOPLIST_FILE = Pastor/Info.plist;
@@ -464,6 +471,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.abhibeckert.Pastor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
